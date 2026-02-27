@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="cabeca">
+            <h3>Interclasse 2025</h3>
+        </div>
+
+        <div class="form-container">
+
+            <div class="form-header">
+                <p>Formulario</p>
+            </div>
+
+            <div class="form-body">
+
+                <h1 class="form-title">Se cadastre de forma rapida!</h1>
+                <p>Responda as perguntas abaixo:</p>
+
+                <form>
+
+                    <div class="box-input">
+                        <label for="nameuser">Nome do Jogador <span class="required-field">*</span> </label>
+                        <input type="text" name="nameuser" id="nameuser" class="block" placeholder="Seu nome verdadeiro" minlength="1" maxlength="50" require>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="nickname">Nickname<span class="required-field">*</span> </label>
+                        <input type="text" name="nickname" id="nickname" class="block" placeholder="Seu nome dentro do jogo" minlength="1" maxlength="50" require>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="games">Qual jogo vai participar? <span class="required-field">*</span> </label>
+                            <select name="games">
+                                <option value="Valorant">Valorant</option>
+                                <option value="League of Legends">League of Legends</option>
+                                <option value="CS2">CS2</option>
+                                <option value="Overwatch">Overwatch</option>
+                            </select>
+                    </div>
+
+                    <div class="box-input">
+                        <p>Plataformas que você joga <span class="required-field">*</span> </p>
+                        <ul class="plataformas">
+                            <li>
+                                <input type="checkbox" id="pc" name="optional[]" value="pc">
+                                <label for="pc">PC</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="pc" name="optional[]" value="console">
+                                <label for="console">Console(PS4/Xbox)</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="mobile" name="optional[]" value="pc">
+                                <label for="mobile">Mobile</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="box-input">
+                        <p>Time fechado ou solo? <span class="required-field">*</span></p>
+                        <label for="formacao">Solo</label>
+                          <input type="radio" value="solo" name="formacao" id="formacao">
+                          <label for="formacao">Time</label>
+                          <input type="radio" value="time" name="formacao" id="formacao">
+                    </div>
+
+                    <div class="box-input">
+                        <label for="age">Qual sua idade? <span class="required-field">*</span></label>
+                          <input type="date" value="age" name="age" id="age">
+                    </div>
+
+                    <div class="box-input">
+                        <p>Foto de perfil e Comprovante de inscrição: <span class="required-field">*</span></p>
+                        <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" required>
+                    </div>
+
+                    <div class="box-input">
+                        <p>Fale um pouco sobre sua experiência no jogo <span class="required-field">*</span> </p>
+                          <textarea name="experiencia" id="experiencia" placeholder="já participou de campeonatos? qual ranking alcançou? etc..."></textarea>
+                        </div>
+                        <input type="submit" value="Enviar" class="btn-submit">
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
